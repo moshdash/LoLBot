@@ -12,7 +12,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 summoner_name = 'ur bullied'
 region = 'EUW1'  # e.g., NA1, EUW1, etc.
-api_key = 'RGAPI-71dfc849-cc08-46fe-ba24-f550cad870c3'
+api_key = os.getenv('RIOTAPI')
 
 # Get summoner ID
 summoner_url = f'https://{region}.api.riotgames.com/lol/summoner/v4/summoners/by-name/{summoner_name}?api_key={api_key}'
@@ -60,7 +60,7 @@ rank = {
 }
 
 def get_random_time():
-    random_hour = random.randint(11, 14)
+    random_hour = random.randint(11, 13)
     random_minute = random.randint(0, 59)
     return datetime.now().replace(hour=random_hour, minute=random_minute, second=0, microsecond=0)
 
