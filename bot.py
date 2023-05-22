@@ -10,7 +10,7 @@ import asyncio
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-summoner_name = 'ur bullied'
+summoner_name = os.getenv('SUMMONER')
 region = 'EUW1'  # e.g., NA1, EUW1, etc.
 api_key = os.getenv('RIOTAPI')
 
