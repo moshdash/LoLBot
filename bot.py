@@ -93,7 +93,7 @@ async def check_rank():
 async def check_promotion_status():
     channel = client.get_channel(274579910230540288)
 
-    currentRank = {'tier': 'GOLD', 'rank': 'II'}
+    currentRank = {'tier': 'GOLD', 'rank': 'III'}
     promoCheckRank = promoCheckCurrentRank()
     if promoCheckRank:
         currentTier = tier[currentRank['tier'].strip()]
